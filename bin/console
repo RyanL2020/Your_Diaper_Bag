@@ -3,9 +3,9 @@ require 'pry'
 require "bundler/setup"
 require "Your_Diaper_Bag"
 
-require '/Users/ryanlocascio/Your_Diaper_Bag/Your_Diaper_Bag/lib/Your_Diaper_Bag/menu.rb'
-require '/Users/ryanlocascio/Your_Diaper_Bag/Your_Diaper_Bag/lib/Your_Diaper_Bag/items.rb'
-require '/Users/ryanlocascio/Your_Diaper_Bag/Your_Diaper_Bag/lib/Your_Diaper_Bag/scrape.rb'
+require "Your_Diaper_Bag/menu"
+require "Your_Diaper_Bag/items"
+require "Your_Diaper_Bag/scrape"
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
 

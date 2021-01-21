@@ -1,4 +1,4 @@
-class Items
+class YourDiaperBag::Item
      
     attr_accessor :brand,  :price 
 
@@ -13,15 +13,17 @@ class Items
     end 
 
     def self.create_items
-        item = Item.new
-        properties = Scrape.get_item_1
-
-        properties.each do |k,v|
-        item.send("#{k}=, v")
-        binding.pry
-        end 
-    end 
-
+        item_hashes = YourDiaperBag::Scrape.get_items("https://motherearthbaby.com/collections/body-care") + 
+                     YourDiaperBag::Scrape.get_items("https://motherearthbaby.com/collections/disposable")            
+        item_hashes.each do |item_hash|
+            item = self.new
+        
+            item_hash.each do |k,v|
+                item.send("#{k}=", v)
+            end
+        end
+    end  
+        
 end 
 
 
