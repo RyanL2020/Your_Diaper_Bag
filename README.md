@@ -1,8 +1,10 @@
 # YourDiaperBag
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Your_Diaper_Bag`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome To Your Diaper Bag!
 
-TODO: Delete this and the text above, and describe your gem
+A Comand Line Application that checks the prices of some everyday items that a mother would carry in their diaper bag.
+
+The website that was scraped for this gem was https://motherearthbaby.com/
 
 ## Installation
 
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To run this app. Please type ./bin/diaper_bag in your terminal. A greeting will pop up with a list of items in your diaper bag. Then user can select one of the items in the list by choosing a number. User can also type list for a list of items. User can quit app by typing exit. 
 
 ## Development
 
